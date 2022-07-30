@@ -1,0 +1,214 @@
+
+:root{
+    --redColor: hsl(0, 100%, 74%);
+    --greenColor: hsl(154, 59%, 51%);
+    --blueColor: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayBlue: hsl(246, 25%, 77%);
+    --whiteColor: #fff;
+    --fontStake: 16px;
+  }
+  
+  
+  *, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+      font-size: var(--fontStake);
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--redColor);
+  }
+  
+  .container{
+    max-width: 1110px;
+    width: 90%;
+    min-height: 100vh;
+    margin: 50px auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .form_content{
+    background-color: var(--whiteColor);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 1px var(--darkBlue);
+  }
+  .text_col{
+    width: 45%;
+    color: var(--whiteColor);
+  }
+  .text_co h1{
+    max-width: 500px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 21px;
+  }
+  .text_col p {
+    line-height: 1.6;
+    color: var(--whiteColor);
+    font-weight: 300;
+    padding: 0 20px 0 0;
+  }
+  .form_col{
+    width: 55%;
+  }
+  .trial{
+    width: 100%;
+    padding: 20px 10px;
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+    border-radius: 5px;
+    box-shadow: 2px 4px 0 5px var(--blueColor);
+    margin-bottom: 30px;
+    text-align: center; 
+  }
+  .trial span{
+    color: #ddd;
+  }
+  input{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: var(--fontStake);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--grayBlue); 
+  }
+  input:hover{
+    border: 3px solid var(--grayBlue); 
+  }
+  input::placeholder{
+    font-weight: bold;
+  }
+  .input_field{
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .error_icon{
+    position: absolute;
+    bottom: 13px;
+    right: 30px;
+    visibility: hidden;
+  }
+  .error_message{
+    color: var(--redColor);
+    margin-bottom: 20px;
+    float: right;
+    padding-top: 4px;
+    display: none;
+  }
+  .input_field.show_error input{
+    border-color: var(--redColor);
+  }
+  .input_field.show_error .error_icon{
+    visibility: visible;
+  }
+  .input_field.show_error .error_message{
+    display: block;
+  }
+  .input_field.success input {
+    border: 2px solid var(--greenColor);
+  }
+  .input_field.success .error_icon{
+    visibility: hidden;
+  }
+  .input_field.success .error_message{
+    display: none;
+  }
+  button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--greenColor);
+    outline: none;
+    border: none;
+    font-size: var(--fontStake);
+    box-shadow: 2px 4px 0 5px var(--greenColor);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: rgb(233, 233, 233);   
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  
+  .policy{
+    font-size: 12px;
+    text-align: center; 
+    color: var(--grayBlue);
+  }
+  .policy span{
+    color: var(--redColor);
+    font-weight: 700;
+  }
+  
+  .attribution a{
+    color: #ccc;
+  }
+  
+  
+  @media screen and (max-width: 960px) {
+    .container{
+      margin: 50px
+    }
+    .policy span{
+      display: block;
+    }
+  }
+  
+  
+  @media screen and (max-width: 764px) {
+    .container{
+      flex-direction: column;
+      margin: auto;
+    }
+    .text_col{
+      width: 100%;
+      padding: 0;
+      margin: 0; 
+    }
+    .text_col h1{
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .text_col p {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .form_col{
+      width: 100%;
+    }
+    
+  }
+  
+  @media screen and (max-width: 370px) {
+    body{
+      background-image: url(./images/bg-intro-mobile.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact Gi
